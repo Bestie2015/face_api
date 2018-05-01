@@ -7,8 +7,8 @@ docker-compose up
 ```
 
 ### Endpoints
-* /healthcheck 	[GET] - return 200
-* / 			[POST] - return metadata on the best image  
+* `127.0.0.1:5002/healthcheck` 	[GET] - return 200
+* `127.0.0.1:5002/` 			         [POST] - return metadata on the best image  
   * body: `["main001.jpg","main003.jpg"]`
   * return `{
     "main001.jpg": {
