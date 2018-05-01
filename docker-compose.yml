@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    face_api:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            - AZURE_FACE_API_KEY=${AZURE_FACE_API_KEY}
+        container_name: face_api
+        ports:
+            - "5002:5002"
